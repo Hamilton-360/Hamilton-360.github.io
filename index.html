@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeon & Shaniya | Wedding Celebration</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#FBF5EC',
+                            200: '#EAD7BE',
+                            300: '#D9B98A',
+                            400: '#C79A5E',
+                            500: '#A97C3A',
+                            600: '#8A6025',
+                            700: '#684616',
+                        },
+                        cream: {
+                            50: '#FDFBF7',
+                            100: '#FAF6EE',
+                            200: '#F3ECE0',
+                            300: '#E5D8C3',
+                        },
+                        warmbronze: '#795548',
+                        charcoal: '#2C2A29',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        script: ['Great Vibes', 'cursive'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Paper Texture Background */
+        body {
+            background-color: #FAF6EE;
+            background-image: radial-gradient(#D9B98A 0.4px, transparent 0);
+            background-size: 16px 16px;
+            background-position: 0 0, 8px 8px;
+            color: #2C2A29;
+            overflow-x: hidden;
+        }
+
+        /* Elegant Double Border Effect matching card */
+        .card-border-frame {
+            border: 1px solid #C79A5E;
+            outline: 3px solid transparent;
+            outline-offset: -8px;
+            position: relative;
+        }
+
+        .card-border-frame::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 1px solid #D9B98A;
+            pointer-events: none;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Subtle Fade Animations */
+        .fade-in-up {
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        .delay-5 { animation-delay: 1.0s; }
+    </style>
+</head>
+
+<body class="antialiased text-gray-800">
+    
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-40 bg-cream/80 backdrop-blur-sm border-b border-gold-200">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl font-script text-gold-600 font-bold">Z & S</div>
+            <div class="hidden md:flex space-x-6 text-xs uppercase tracking-widest font-medium text-gray-600">
+                <a href="#hero" class="hover:text-gold-600 transition-colors">Home</a>
+                <a href="#details" class="hover:text-gold-600 transition-colors">Our Day</a>
+                <a href="#rsvp" class="hover:text-gold-600 transition-colors">RSVP</a>
+                <a href="#registry" class="hover:text-gold-600 transition-colors">Registry</a>
+            </div>
+            <a href="#rsvp" class="bg-gold-600 text-white px-4 py-2 text-xs uppercase tracking-widest font-semibold hover:bg-gold-700 transition-all shadow-md">
+                RSVP Now
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Main Container Frame -->
+    <main class="max-w-4xl mx-auto px-4 py-20 mt-10">
+
+        <!-- Card Wrapper -->
+        <div class="bg-cream-50 card-border-frame p-6 sm:p-10 rounded-lg border border-gold-300 shadow-xl relative">
+
+            <!-- Corner Decorative Flourishes -->
+            <div class="absolute top-2 left-2 w-16 h-16 border-t border-l border-gold-400/50"></div>
+            <div class="absolute top-2 right-2 w-16 h-16 border-t border-r border-gold-400/50"></div>
+            <div class="absolute bottom-2 left-2 w-16 h-16 border-b border-l border-gold-400/50"></div>
+            <div class="absolute bottom-2 right-2 w-16 h-16 border-b border-r border-gold-400/50"></div>
+
+            <!-- HERO SECTION -->
+            <section id="hero" class="text-center py-12 sm:py-16 fade-in-up">
+                <p class="text-xs sm:text-sm uppercase tracking-widest text-gold-600 font-medium mb-4">Together with their families</p>
+                
+                <!-- Couple Names -->
+                <h1 class="font-script text-6xl sm:text-7xl md:text-8xl text-gold-600 mb-6 leading-none tracking-wide">
+                    Zeon <span class="font-serif italic text-4xl sm:text-5xl md:text-6xl text-warmbronze font-normal mx-2">&</span> Shaniya
+                </h1>
+                
+                <p class="text-xs sm:text-sm text-charcoal font-medium uppercase tracking-[0.2em] mb-8">
+                    Invite you to join their
+                    <br class="hidden sm:hidden">
+                    wedding celebration
+                </p>
+                
+                <!-- Divider -->
+                <div class="w-16 h-px bg-gold-400 mx-auto mb-8"></div>
+                
+                <!-- Date Showcase matching aesthetic -->
+                <div class="my-8 py-6 border-y border-gold-200/60 max-w-sm mx-auto">
+                    <span class="block text-xs uppercase tracking-[0.3em] font-light text-charcoal mb-2">March</span>
+                    <span class="block font-serif text-5xl text-gold-600 font-bold mb-2 tracking-tight">25</span>
+                    <span class="block text-xs uppercase tracking-[0.3em] font-light text-charcoal">Thursday</span>
+                </div>
+
+                <!-- Live Countdown -->
+                <div class="mt-10 mb-8" id="timer">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4 tracking-tight">Counting Down to the Special Day</p>
+                    <div id="countdown" class="flex justify-center items-center space-x-6 text-charcoal font-serif text-3xl sm:text-4xl tracking-tight">
+                        <!-- Countdown dynamically inserted here by JS -->
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="h-px bg-gold-300 max-w-sm mx-auto my-12"></section>
+
+
+            <!-- EVENT DETAILS SECTION -->
+            <section id="details" class="text-center py-12 fade-in-up delay-1">
+                <div class="inline-block p-3 rounded-full border border-gold-300 text-gold-500 mb-6">
+                    <i class="fa-regular fa-envelope text-2xl"></i>
+                </div>
+                <h2 class="font-serif text-4xl text-gold-600 font-bold mb-10 tracking-tight">Kindly RSVP & Details</h2>
+
+                <div class="grid grid-cols-1 gap-10 max-w-xl mx-auto">
+                    
+                    <!-- Venue Card -->
+                    <div class="bg-cream p-8 border border-gold-200 rounded-md shadow-sm">
+                        <i class="fa-solid fa-location-dot text-gold-500 text-2xl mb-4"></i>
+                        <h3 class="font-serif text-2xl text-gold-600 font-bold mb-2 tracking-tight">The Location</h3>
+                        <p class="text-sm font-light text-charcoal leading-relaxed mb-6">
+                            MORNE COCO RD,
+                            <br>
+                            GOODWOOD PARK EXTENSION,
+                            <br>
+                            DIEGO MARTIN
+                            <br>
+                            <span class="text-gold-600 block mt-3 font-semibold">Trinidad and Tobago</span>
+                        </p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Morne+Coco+Rd,+Goodwood+Park+Extension,+Diego+Martin,+Trinidad+and+Tobago" target="_blank" class="block w-full py-3 bg-gold-600 text-white rounded text-xs uppercase tracking-widest font-semibold hover:bg-gold-700 transition-colors shadow-sm">
+                            Get Directions
+                        </a>
+                    </div>
+                    
+                    <!-- Schedule Card -->
+                    <div class="bg-cream p-8 border border-gold-200 rounded-md shadow-sm">
+                        <i class="fa-regular fa-clock text-gold-500 text-2xl mb-4"></i>
+                        <h3 class="font-serif text-2xl text-gold-600 font-bold mb-2 tracking-tight">Schedule & Time</h3>
+                        <p class="text-sm font-light text-charcoal leading-relaxed mb-6">
+                            THURSDAY, MARCH 25, 2027
+                            <br>
+                            <span class="font-semibold text-gold-600 text-lg mt-2 block tracking-tight">12:00 PM SHARP</span>
+                            <br>
+                            Ceremony followed by luncheon & evening celebration.
+                        </p>
+                        <button onclick="addToCalendar()" class="block w-full py-3 border border-gold-400 text-gold-600 rounded text-xs uppercase tracking-widest font-semibold hover:bg-gold-100 transition-colors">
+                            <i class="fa-solid fa-calendar-plus mr-2 text-sm"></i>Add to Calendar
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="h-px bg-gold-300 max-w-sm mx-auto my-12"></section>
+
+
+            <!-- RSVP FORM SECTION -->
+            <section id="rsvp" class="py-12 fade-in-up delay-2">
+                <div class="text-center mb-10">
+                    <h2 class="font-serif text-gold-500 text-2xl mb-4">Kindly RSVP</h2>
+                    <h3 class="text-gold-600 font-bold text-3xl sm:text-4xl tracking-tight mb-4 tracking-tight">Please respond at your earliest convenience</h3>
+                    <p class="text-xs uppercase tracking-widest text-charcoal">We look forward to celebrating with you.</p>
+                </div>
+
+                <div class="max-w-xl mx-auto bg-cream p-8 rounded-lg shadow-sm border border-gold-200">
+                    <form action="https://formspree.io/f/xrppolrg" method="POST" id="rsvpForm" onsubmit="handleRSVP(event)">
+                        
+                        <!-- Guest Name -->
+                        <div class="mb-5">
+                            <label class="block text-xs uppercase tracking-widest font-semibold text-charcoal mb-2">Full Name(s) *</label>
+                            <input type="text" name="guestName" required placeholder="e.g. Jane & John Doe" class="w-full px-4 py-3 bg-white border border-gold-200 rounded focus:ring-1 focus:ring-gold-500 focus:border-gold-500 outline-none transition-all placeholder:text-gray-300 placeholder:text-sm text-charcoal">
+                        </div>
+                        
+                        <!-- Attendance Options -->
+                        <div class="mb-5">
+                            <label class="block text-xs uppercase tracking-widest font-semibold text-charcoal mb-3">Attendance *</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <label class="flex items-center p-4 bg-white border border-gold-200 rounded cursor-pointer hover:border-gold-400 transition-all">
+                                    <input type="radio" name="attendance" value="attending" checked class="w-4 h-4 text-gold-500 accent-gold-500 focus:ring-0">
+                                    <span class="ml-3 text-xs uppercase font-medium text-charcoal tracking-widest">Joyfully Accepts</span>
+                                </label>
+                                <label class="flex items-center p-4 bg-white border border-gold-200 rounded cursor-pointer hover:border-gold-400 transition-all">
+                                    <input type="radio" name="attendance" value="declining" class="w-4 h-4 text-gold-500 accent-gold-500 focus:ring-0">
+                                    <span class="ml-3 text-xs uppercase font-medium text-charcoal tracking-widest">Regrettably Declines</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Number of Guests -->
+                        <div class="mb-5">
+                            <label class="block text-xs uppercase tracking-widest font-semibold text-charcoal mb-2">Number of Attending Guests</label>
+                            <select name="guestCount" class="w-full px-4 py-3 bg-white border border-gold-200 rounded focus:ring-1 focus:ring-gold-500 outline-none transition-all text-charcoal text-sm">
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Dietary Restrictions -->
+                        <div class="mb-8">
+                            <label class="block text-xs uppercase tracking-widest font-semibold text-charcoal mb-2">Dietary Restrictions or Message for couple</label>
+                            <textarea name="message" rows="3" placeholder="Vegetarian, allergies, or well wishes..." class="w-full px-4 py-3 bg-white border border-gold-200 rounded focus:ring-1 focus:ring-gold-500 focus:border-gold-500 outline-none transition-all placeholder:text-gray-300 placeholder:text-sm text-charcoal"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="w-full py-4 bg-gold-600 text-white font-bold text-xs uppercase tracking-widest hover:bg-gold-700 transition-all shadow-md mt-4">
+                            Submit RSVP
+                        </button>
+
+                    </form>
+
+                    <!-- Success Feedback Box (Initially Hidden) -->
+                    <div id="successBox" class="hidden text-center py-6">
+                        <i class="fa-solid fa-circle-check text-gold-500 text-4xl mb-4"></i>
+                        <h3 class="font-serif text-2xl text-gold-600 font-bold mb-2 tracking-tight">RSVP Submitted</h3>
+                        <p class="text-charcoal font-light text-sm">Thank you for your response!</p>
+                        <button onclick="resetRSVP()" class="text-gold-500 text-xs uppercase tracking-widest underline font-semibold mt-6">Edit Response</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="h-px bg-gold-300 max-w-sm mx-auto my-12"></section>
+
+
+            <!-- GIFT REGISTRY & PAYPAL WISH -->
+            <section id="registry" class="py-12 fade-in-up delay-3">
+                <div class="text-center mb-10">
+                    <div class="inline-block p-3 rounded-full border border-gold-300 text-gold-500 mb-6">
+                        <i class="fa-solid fa-gift text-2xl"></i>
+                    </div>
+                    <h2 class="font-serif text-4xl text-gold-600 font-bold mb-2 tracking-tight">Registry & Wishing Well</h2>
+                    <p class="text-xs uppercase tracking-widest text-charcoal">Your presence is the greatest gift,<br class="hidden sm:hidden"> but if you wish to honor us...</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                    
+                    <!-- PayPal Contribution -->
+                    <div class="bg-cream p-8 border border-gold-200 rounded-lg shadow-sm text-center flex flex-col justify-between">
+                        <div>
+                            <i class="fa-brands fa-paypal text-gold-500 text-3xl mb-4"></i>
+                            <h3 class="font-serif text-2xl text-gold-600 font-bold mb-3 tracking-tight">PayPal Contribution</h3>
+                            <p class="text-charcoal text-sm font-light leading-relaxed mb-6">You can send monetary gifts securely via PayPal using the link or details below.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded border border-gold-100 mb-6 mx-auto w-full">
+                            <span class="block text-[10px] text-gray-400 uppercase tracking-wider mb-1">PAYPAL LINK</span>
+                            <span class="block text-sm font-medium text-charcoal break-all">paypal.me/ZeonAndShaniya</span>
+                        </div>
+                        
+                        <a href="https://paypal.me/ZeonAndShaniya" target="_blank" class="block w-full py-3 bg-gold-600 hover:bg-gold-700 text-white rounded text-xs uppercase tracking-widest font-semibold transition-colors shadow-sm">
+                            Go to PayPal
+                        </a>
+                    </div>
+                    
+                    <!-- Gift Registry Box -->
+                    <div class="bg-cream p-8 border border-gold-200 rounded-lg shadow-sm text-center flex flex-col justify-between">
+                        <div>
+                            <i class="fa-solid fa-heart text-gold-500 text-3xl mb-4"></i>
+                            <h3 class="font-serif text-2xl text-gold-600 font-bold mb-3 tracking-tight">Online Registry</h3>
+                            <p class="text-charcoal text-sm font-light leading-relaxed mb-6">Explore our official registry wishlist for household items and gifts.</p>
+                        </div>
+                        
+                        <!-- QR Code / Link Placeholder -->
+                        <div class="mb-6 mx-auto">
+                            <i class="fa-solid fa-cart-shopping text-gold-300 text-5xl"></i>
+                        </div>
+                        
+                        <a href="https://www.amazon.com/wedding/share/hamiltonwedding2027" target="_blank" class="block w-full py-3 bg-gold-600 hover:bg-gold-700 text-white rounded text-xs uppercase tracking-widest font-semibold transition-colors shadow-sm">
+                            Open Store Registry
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+        </div> <!-- End Card Wrapper -->
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-8 pb-12 text-center fade-in-up delay-4">
+        <p class="font-script text-3xl sm:text-4xl text-gold-600 mb-4 opacity-90 tracking-wide">
+            Zeon <span class="font-serif text-xl">&</span> Shaniya
+        </p>
+        <p class="text-[10px] uppercase tracking-widest text-gray-500 font-light">
+            &copy; 2026 Wedding Celebration &bull; All Rights Reserved
+        </p>
+    </footer>
+
+    
+    <!-- MODAL POPUP FOR REGISTRY LINK -->
+    <div id="registryModal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm hidden" onc
